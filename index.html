@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css">
+    <title>textAI</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="textAi">
+
+        <div class="textAi__header">
+            <h1 class="textAi__title">text.AI</h1>
+            <h2 class="textAi__subtitle">Intelligent App for text processing</h2>
+        </div>
+    
+        <main class="textAi__main">
+            <form class="form-control">
+                <div class="textAi__block">
+                    <button id="open"class="textAi__original_button" type="button">Original</button>
+                    <div id="image" class="image-container">
+                        <div id="opacity"></div>
+                        <div id="result"> </div>
+                    </div>
+                </div>
+    
+                <div class="textAi__first_form">
+                    <textarea id="info" class="textAi__textarea" placeholder="Original text"></textarea>
+                </div>
+            </form>
+    
+            <form class="textAi__form">
+                    <button id="send" class="textAi__button" type="button">Check</button>
+                    <div class="textAi__second_form">
+                        <textarea id="value" class="textAi__textarea" placeholder="Input text... textarea 2 rows"></textarea>
+                    </div>
+            </form>
+        </main>
+    
+        <footer class="textAi__footer">
+            <div class="textAi__logo">
+                <a href="http://devincubator.by/" class="textAi__link">
+                    <img class="textAi__img" src="src/devinc.svg" alt="logo">    
+                </a> 
+            </div>
+    
+            <div class="textAi__author">
+                <p class="textAi__footer_text">Nickname, year</p>
+            </div>
+    
+            <div class="textAi__media">
+                <div class="textAi__network">
+                    <a href="https://github.com" class="textAi__link">
+                        <img class="textAi__icon" src="src/github.svg" alt="github">
+                    </a>
+                </div>
+                <div class="textAi__network">
+                    <a href="https://vk.com" class="textAi__link">
+                        <img class="textAi__icon" src="src/vk.svg" alt="vk">
+                    </a>
+                </div>
+                <div class="textAi__network">
+                    <a href="https://facebook.com" class="textAi__link">
+                        <img class="textAi__icon" src="src/facebook.svg" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="src/serverRequest.js"> </script>
+</body>
+</html>
