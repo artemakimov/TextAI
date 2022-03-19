@@ -12,6 +12,14 @@ body {
   font-family: "Exo 2", sans-serif;
 }
 
+#particles-js{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .textAi {
   position: relative;
   margin-left: auto;
@@ -162,6 +170,11 @@ body {
   transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
 }
 
+.btn_disabled{
+  cursor: not-allowed;
+  background-color: #5c5c5c;
+}
+
 .textAi__button:hover {
   border: 0.125rem solid transparent;
   font-weight: bold;
@@ -221,13 +234,14 @@ body {
   text-align: center;
   color: #ffffff;
   z-index: 9999; 
+  font-size: 2rem;
 }
 
 .opacity{
   background-color: transparent;
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .textAi__footer {
