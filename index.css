@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(90deg, #39b135 10%, #081b04 80%), #000000;
+  font-family: "Exo 2", sans-serif;
+}
+
+.textAi {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.25rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 76.25rem;
+}
+
+.textAi__header {
+  margin-bottom: 8.25rem;
+}
+
+.textAi__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.625rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.75rem;
+}
+
+.textAi__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.125rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.textAi__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 6.7381rem;
+  width: 100%;
+}
+
+.form-control{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.textAi__block {
+  margin-right: 1.625rem;
+}
+
+.textAi__original_button {
+  padding: 1rem;
+  width: 15.625rem;
+  height: 4.125rem;
+  margin-bottom: 1.375rem;
+  background: #0B1722;
+  outline: none;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+}
+
+.textAi__original_button:hover {
+  border: 0.125rem solid transparent;
+  font-weight: bold;
+  background: #1B446A;
+  color: #ffffff;
+  transition-delay: 0;
+  transition: all 0.5s;
+}
+
+.textAi__original_button:active {
+  background: #102B43;
+}
+
+.textAi__form {
+  display: flex;
+  width: 100%;
+}
+
+.textAi__first_form {
+  height: 15.0625rem;
+  max-width: 56.5rem;
+  width: 100%;
+}
+
+.textAi__second_form {
+  max-width: 56.5rem;
+  width: 100%;
+  height: 4.125rem;
+  margin-bottom: 1.875rem;
+}
+
+.textAi__label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0.0625rem;
+  margin: 0.0625rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0.0625rem;
+}
+
+.textAi__textarea {
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  border: 0.125rem;
+  border-radius: 1rem;
+  padding: 0.6875rem 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  overflow: auto;
+}
+
+.textAi__button {
+  max-width: 15.625rem;
+  width: 100%;
+  height: 4.125rem;
+  margin-right: 1.625rem;
+  background: #0B1722;
+  outline: none;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+}
+
+.textAi__button:hover {
+  border: 0.125rem solid transparent;
+  font-weight: bold;
+  background: #1B446A;
+  color: #ffffff;
+  transition-delay: 0;
+  transition: all 0.5s;
+}
+.textAi__button:active {
+  background: #102B43;
+}
+
+.image-container {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 9.5rem;
+  width: 15.625rem;
+  border-radius: 0.625rem;
+  background-color: #0b1722;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.textAi__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#opacity{
+  position: absolute;
+  background-color: #000000;
+  background-image: url(main.svg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0.625rem;
+  width: 100%;
+  height: 100%;
+}
+
+#image{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#result{
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  z-index: 9999; 
+}
+
+.opacity{
+  background-color: transparent;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.4;
+}
+
+.textAi__footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 2px solid #0B1722;
+  border-radius: 10px;
+  padding: 1.5625rem 2.5rem 1rem 2.5rem;
+}
+
+.textAi__media {
+  display: flex;
+}
+
+.textAi__author {
+  margin-left: 4.5rem;
+}
+
+.textAi__footer_text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  color: #5c5c5c;
+}
+
+.textAi__network {
+  margin-left: 1.5rem;
+}
+
+.textAi__icon {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 870px) {
+  .textAi__title {
+    font-size: 3.825rem;
+  }
+
+  .textAi__subtitle {
+    font-size: 2.125rem;
+  }
+
+  .textAi__authors {
+    margin-left: 0;
+    margin-bottom: 0.75rem;
+  }
+
+}
+
+@media (max-width: 759px) {
+  .textAi__header {
+
+    margin-bottom: 4.25rem;
+  }
+  .textAi__title {
+    font-size: 3.125rem;
+  }
+
+  .textAi__subtitle {
+    font-size: 1.5rem;
+  }
+
+  .textAi__main {
+    margin-bottom: 3rem;
+  }
+
+  .form-control{
+    flex-direction: column-reverse;
+  }
+
+  .textAi__block {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .textAi__original_button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .textAi__picture {
+    width: 100%;
+    order:-1;
+  }
+
+  .textAi__form {
+    flex-direction: column-reverse;
+  }
+
+  .textAi__button {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .textAi__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textAi__logo {
+    margin-bottom: 0.75rem;
+  }
+
+  .textAi__author {
+    margin-left: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .textAi__text {
+    font-size: 1.25rem;
+  }
+
+  .textAi__network:first-of-type {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .textAi__header {
+    margin-bottom: 2rem;
+  }
+
+  .textAi__title {
+    margin-bottom: 0.875rem;
+  }
+
+  .textAi__subtitle {
+    font-size: 1rem;
+  }
+
+  .textAi__text {
+    font-size: 1rem;
+  }
+
+  .textAi__textarea {
+    font-size: 0.8rem;
+  }
+}
